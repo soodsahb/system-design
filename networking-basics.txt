@@ -1,0 +1,145 @@
+Client-Request-Server-Response 
+
+Clients (web browsers) send requests to servers for web pages and resources 
+
+Servers process the requests and send back responses containing the requested data 
+
+🏠 IP Addresses 
+
+Unique numerical labels assigned to devices connected to a network 
+
+Used to identify and communicate with devices on the internet 
+
+🌍 DNS (Domain Name System) 
+
+Translates human-readable domain names (e.g., www.example.com) into IP addresses 
+
+Hierarchical and distributed naming system for computers, services, or resources connected to the internet 
+
+🕸️ Central Hubs and Router Connections 
+
+Central hubs act as connection points for multiple devices in a network 
+
+Routers direct data packets between networks, enabling internet connectivity in homes and offices 
+
+🔍 Domain Levels 
+
+Root domain: The highest level in the DNS hierarchy (e.g., ".com", ".org") 
+
+Second-level domain: The domain name directly preceding the root domain (e.g., "example" in "example.com") 
+
+Third-level domain (subdomain): An optional part added before the second-level domain (e.g., "www" in "www.example.com") 
+
+💻 Servers 
+
+Computers that store, process, and deliver web pages and resources to clients 
+
+Types of servers: Web servers, application servers, database servers, mail servers, etc. 
+
+Servers can be physically located in data centers or hosted in the cloud 
+
+Accessed through specific IP addresses or domain names 
+
+🌊 Optical Fiber Networks 
+
+High-speed data transmission using light pulses through thin glass or plastic fibers 
+
+Used for long-distance data transfer, including undersea cables connecting continents 
+
+🌐 ISP (Internet Service Provider) 
+
+Companies that provide internet access to consumers and businesses 
+
+ISP architecture includes network infrastructure, routers, and servers to manage internet connectivity 
+
+📦 Data Packets and Flow 
+
+Data is divided into smaller units called packets for transmission over the internet 
+
+Packets travel from the client to the server and back, following specific network paths 
+
+Browsers support multiple network requests simultaneously; additional requests are queued 
+
+🖥️ Browser Caching and Service Workers 
+
+Browsers check the cache and service workers before making a request to the server 
+
+If a response is found in the cache or service worker, no further call to the server is made 
+
+🤝 Peering Mechanism 
+
+Voluntary interconnection of networks, allowing direct exchange of traffic between ISPs 
+
+Reduces costs and improves performance by keeping traffic local 
+
+🔄 Client-Server Connection (SYN and ACK) 
+
+SYN (Synchronize) and ACK (Acknowledge) are part of the TCP three-way handshake process 
+
+Client sends SYN, server responds with SYN-ACK, client sends ACK to establish a connection 
+
+🔒 DNS Lookup, TCP Handshake, SSL Handshake 
+
+DNS lookup: Resolving domain names to IP addresses 
+
+TCP handshake: Establishing a reliable connection between client and server 
+
+SSL/TLS handshake: Negotiating encryption parameters for secure communication 
+
+🔐 Server Certificate and Data Encryption 
+
+Server sends its digital certificate to the client for authentication 
+
+Client and server negotiate an encryption method and exchange keys 
+
+Data transmitted between client and server is encrypted to ensure security 
+
+🌐 Four Steps in Displaying a Website 
+
+Loading: Fetching resources (HTML, CSS, JS) from the server 
+
+Scripting: Parsing and executing JavaScript code 
+
+Rendering: Constructing the DOM, CSSOM, and render tree 
+
+Painting: Displaying the rendered content on the screen 
+
+📜 Parsing 
+
+HTML parsing: Converting raw HTML into a Document Object Model (DOM) tree 
+
+Render-blocking: External stylesheets and scripts that block rendering until they are loaded and parsed 
+
+Parser-blocking: JavaScript code that interrupts HTML parsing until executed 
+
+🎨 Style Calculation 
+
+Parsing CSS and building the CSS Object Model (CSSOM) 
+
+CSSOM represents the styles applied to the document 
+
+🌿 DOM, CSSOM, and Render Tree 
+
+DOM: Tree-like representation of the HTML document structure 
+
+CSSOM: Tree-like representation of the styles applied to the document 
+
+Render Tree: Combination of the DOM and CSSOM, representing the visual layout of the page 
+
+⚙️ Executing JavaScript 
+
+Loading scripts: Fetching JavaScript files from the server 
+
+Parsing: Reading and understanding the JavaScript code 
+
+Compiling: Converting the parsed code into machine-readable format 
+
+Executing: Running the compiled code 
+
+🖌️ Layouting, Painting, and Compositing 
+
+Layouting: Calculating the position and size of elements based on the render tree 
+
+Painting: Filling in pixels with colors, texts, and images 
+
+Compositing: Combining multiple painted layers into a final image 
