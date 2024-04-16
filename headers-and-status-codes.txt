@@ -1,0 +1,113 @@
+🌐 REST API (Representational State Transfer Application Programming Interface) 
+
+Architectural style for designing networked applications 
+
+Relies on a stateless, client-server communication protocol, typically HTTP 
+
+Treats server objects as resources that can be created, read, updated, or deleted using standard HTTP methods (GET, POST, PUT, DELETE) 
+
+Benefits: 
+
+Statelessness: Each request contains all the information necessary for the server to understand and process it, without relying on previous requests or server-side state 
+
+Scalability: Stateless nature allows for easy scaling of the server, as requests can be distributed across multiple servers without the need for shared state 
+
+Flexibility: Decouples the client and server implementations, allowing for independent evolution and updates 
+
+Uniform Interface: Provides a standardized way of interacting with resources, using HTTP methods and URIs (Uniform Resource Identifiers) 
+
+Caching: Responses can be cached by the client or intermediary servers to improve performance and reduce server load 
+
+📩 HTTP Request 
+
+Request Line: Contains the HTTP method (e.g., GET, POST), the requested resource URI, and the HTTP version 
+
+Headers: Key-value pairs that provide additional information about the request (e.g., Host, User-Agent, Accept) 
+
+Body (optional): Contains data sent by the client to the server (e.g., form data, JSON payload) 
+
+📨 HTTP Response 
+
+Status Line: Contains the HTTP version, status code, and status message 
+
+Headers: Key-value pairs that provide additional information about the response (e.g., Content-Type, Content-Length) 
+
+Body (optional): Contains the requested resource data or error messages 
+
+🔗 URL (Uniform Resource Locator) Parts 
+
+Scheme: Specifies the protocol used to access the resource (e.g., http, https) 
+
+Host: Identifies the server hosting the resource (e.g., www.example.com) 
+
+Path: Specifies the location of the resource on the server (e.g., /path/to/resource) 
+
+Query Parameters: Key-value pairs appended to the URL to provide additional information to the server (e.g., ?key1=value1&key2=value2) 
+
+Fragment: Identifies a specific part of the resource (e.g., #section), not sent to the server 
+
+📝 HTTP Methods 
+
+GET: Retrieves a resource from the server 
+
+POST: Submits data to be processed by the server 
+
+PUT: Updates an existing resource on the server 
+
+PATCH: Partially modifies an existing resource on the server 
+
+DELETE: Removes a resource from the server 
+
+HEAD: Similar to GET, but retrieves only the headers, not the body 
+
+OPTIONS: Describes the communication options for the target resource 
+
+CONNECT: Establishes a tunnel to the server identified by the target resource 
+
+TRACE: Performs a message loop-back test along the path to the target resource 
+
+📤 Request Headers 
+
+Host: Specifies the server's domain name 
+
+Origin: Indicates the origin (scheme, hostname, and port) of the request 
+
+Referer: Specifies the URL of the previous web page from which the current request originated 
+
+User-Agent: Contains information about the client making the request (e.g., browser, operating system) 
+
+Accept: Specifies the media types that are acceptable for the response 
+
+Accept-Encoding: Indicates the compression algorithms supported by the client 
+
+Connection: Controls whether the network connection stays open after the current request/response is complete 
+
+Authorization: Contains credentials to authenticate the client with the server 
+
+Cookie: Sends cookies previously set by the server back to the server 
+
+Cache-Control: Specifies caching directives for the request/response chain 
+
+📥 Response Headers 
+
+Server: Identifies the server software handling the request 
+
+Content-Type: Indicates the media type of the response body 
+
+Content-Length: Specifies the size of the response body in bytes 
+
+Set-Cookie: Sends cookies from the server to the client 
+
+ETag: Provides a unique identifier for a specific version of a resource, used for caching and conditional requests 
+
+Status Codes: Numeric codes that indicate the result of the server's attempt to understand and satisfy the request 
+
+1xx: Informational responses 
+
+2xx: Successful responses 
+
+3xx: Redirection messages 
+
+4xx: Client error responses 
+
+5xx: Server error responses 
