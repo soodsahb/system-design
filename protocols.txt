@@ -1,0 +1,85 @@
+🌐 HTTP (Hypertext Transfer Protocol) 
+
+Application-layer protocol for transmitting hypermedia documents (e.g., HTML, images, videos) 
+
+Follows a client-server model, where the client (usually a web browser) sends requests to the server, and the server responds with the requested resources 
+
+HTTP uses TCP (Transmission Control Protocol) as its underlying transport protocol 
+
+📡 TCP Connection 
+
+Reliable, connection-oriented protocol that ensures data is delivered accurately and in the correct order 
+
+Establishes a connection between the client and server before data transmission begins 
+
+Uses a three-way handshake process (SYN, SYN-ACK, ACK) to establish a connection 
+
+Provides error detection, flow control, and congestion control mechanisms 
+
+🔀 HTTP Request-Response 
+
+HTTP requests are sent by the client to the server, specifying the desired action (e.g., GET, POST, PUT, DELETE) and the resource URL 
+
+HTTP responses are sent by the server back to the client, containing a status code, headers, and optional message body 
+
+Common HTTP methods: GET (retrieve data), POST (submit data), PUT (update data), DELETE (remove data) 
+
+🚀 HTTP/3 and UDP Connection 
+
+HTTP/3 is the latest version of the HTTP protocol, built on top of the QUIC (Quick UDP Internet Connections) protocol 
+
+QUIC is a transport layer protocol that uses UDP (User Datagram Protocol) instead of TCP 
+
+UDP is a connectionless protocol that does not guarantee reliable delivery or ordering of data packets 
+
+HTTP/3 and QUIC aim to improve performance by reducing latency and providing multiplexing, while still ensuring reliability and security 
+
+📦 TCP and Data Packet Loss 
+
+TCP ensures that data packets are not lost during transmission 
+
+If a packet is lost, TCP detects the loss and requests retransmission of the missing packet 
+
+TCP uses sequence numbers and acknowledgments to track the delivery of data packets 
+
+Applications that require reliable data delivery, such as file transfers and web browsing, use TCP 
+
+🔒 HTTPS (HTTP Secure) 
+
+Extension of HTTP that provides encryption and authentication for secure communication 
+
+Uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols to encrypt data transmitted between the client and server 
+
+Ensures confidentiality, integrity, and authenticity of the transmitted data 
+
+Commonly used for sensitive transactions, such as online banking and e-commerce 
+
+🔌 WebSockets 
+
+Protocol that enables full-duplex, bidirectional communication between a client and server over a single TCP connection 
+
+Allows real-time data transfer without the need for polling or long-polling techniques 
+
+Useful for applications that require persistent connections and low-latency communication, such as chat applications, collaborative tools, and live updates 
+
+📧 SMTP (Simple Mail Transfer Protocol) 
+
+Application-layer protocol used for sending and receiving email messages 
+
+Follows a client-server model, where the client (email sender) communicates with the server (email server) to send the message 
+
+Uses TCP as its transport protocol, typically on port 25 or 587 (for submission) 
+
+Involves multiple steps: connection establishment, sender and recipient identification, message transfer, and connection termination 
+
+📂 FTP (File Transfer Protocol) 
+
+Application-layer protocol used for transferring files between a client and server 
+
+Follows a client-server model, where the client can upload, download, and manipulate files on the server 
+
+Uses two separate TCP connections: a control connection for commands and responses, and a data connection for actual file transfer 
+
+Supports user authentication and different transfer modes (e.g., ASCII, binary) 
+
+Commonly used for file sharing, backup, and website publishing 
