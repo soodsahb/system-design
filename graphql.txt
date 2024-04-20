@@ -1,0 +1,101 @@
+📊 GraphQL 
+
+A query language and runtime for APIs, developed by Facebook 
+
+Allows clients to request exactly the data they need, and nothing more 
+
+Provides a complete and understandable description of the data in the API 
+
+Enables evolution of APIs over time without versioning 
+
+Supports reading, writing (mutating), and subscribing to changes to data 
+
+🤔 Why GraphQL? 
+
+Solves overfetching and underfetching problems commonly associated with REST APIs 
+
+Overfetching: Receiving more data than needed, leading to slower response times and increased network usage 
+
+Underfetching: Receiving insufficient data, requiring additional requests to fetch the remaining data 
+
+Enables clients to request multiple resources in a single request, reducing the number of round trips to the server 
+
+Provides a strongly-typed schema, allowing for better tooling and validation 
+
+Simplifies API versioning by allowing the addition of new fields and types without impacting existing queries 
+
+🆚 REST vs. GraphQL 
+
+REST (Representational State Transfer): 
+
+Resource-based architecture, where each resource is identified by a unique URL 
+
+Uses standard HTTP methods (GET, POST, PUT, DELETE) for CRUD operations 
+
+Requires multiple requests to fetch related resources 
+
+Over-fetching and under-fetching of data is common 
+
+GraphQL: 
+
+Query-based architecture, where the client specifies the structure of the data needed 
+
+Uses a single endpoint for all queries and mutations 
+
+Allows fetching multiple resources in a single request 
+
+Provides exactly the data requested by the client, no more, no less 
+
+🧱 Building Blocks of GraphQL 
+
+Types: Define the shape of the data and the operations that can be performed on it 
+
+Object Types: Represent a set of fields, each with a specific data type 
+
+Scalar Types: Built-in types such as Int, Float, String, Boolean, and ID 
+
+Query Type: Defines the entry point for read operations 
+
+Mutation Type: Defines the entry point for write operations 
+
+Input Types: Used for passing complex objects as arguments to mutations 
+
+Fields: Describe the properties of a type and specify the data that can be queried or mutated 
+
+Arguments: Allow passing parameters to fields to filter, sort, or paginate the returned data 
+
+Resolvers: Functions that map the fields in the schema to the actual data sources (e.g., databases, APIs) 
+
+🎯 Fetching Multiple Types of Data in One Request 
+
+GraphQL allows clients to request multiple types of data in a single query 
+
+The query specifies the fields and nested relationships needed, and the server returns the requested data in a structured format 
+
+This eliminates the need for multiple round trips to the server, reducing latency and improving performance 
+
+✨ Benefits of GraphQL over REST 
+
+Reduced Over-Fetching and Under-Fetching: 
+
+Clients can request exactly the data they need, avoiding the transfer of unnecessary data 
+
+Fewer requests are needed to fetch all the required data, reducing network overhead 
+
+Improved Performance: 
+
+Batching multiple requests into a single query reduces the number of round trips to the server 
+
+Smaller payload sizes result in faster response times and lower network usage 
+
+Simplified API Development and Maintenance: 
+
+A single endpoint handles all queries and mutations, simplifying API design and documentation 
+
+New fields and types can be added without impacting existing queries, enabling seamless API evolution 
+
+Enhanced Client Flexibility: 
+
+Clients have full control over the structure and fields of the requested data 
+
+Different clients can request different subsets of data, tailored to their specific needs 
