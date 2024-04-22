@@ -1,0 +1,60 @@
+💻 The internet works by connecting millions of devices (computers, phones, servers, etc.) through a vast network of networks. Data is broken into small packets, which are transmitted over various routes until they reach their destination. Protocols help ensure these packets are transported reliably and efficiently.
+🛰️ Protocols are sets of rules that govern how devices communicate over the internet. Some essential protocols include:
+TCP/IP (Transmission Control Protocol/Internet Protocol): Defines how data is transmitted and routed
+HTTP (Hypertext Transfer Protocol): Allows web browsers and servers to communicate
+SMTP (Simple Mail Transfer Protocol): Handles email transmission
+FTP (File Transfer Protocol): Facilitates file transfers
+🔒 HTTP (Hypertext Transfer Protocol) is the standard protocol for transmitting data over the web. HTTPS (Secure HTTP) adds a layer of encryption, ensuring data remains secure and private during transmission. Secure communication is crucial for sensitive information like login credentials, financial data, etc.
+🌐 DNS (Domain Name System) acts as a phone book for the internet, translating human-readable domain names (e.g., example.com) into IP addresses that computers can understand. IP addresses are unique identifiers assigned to each device connected to the internet, allowing them to communicate with each other.
+🌐 REST (Representational State Transfer) is an architectural style for designing web services that promote scalability, simplicity, and statelessness. It uses HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources (data).
+🔑 Key principles of RESTful API design include:
+Client-server architecture: Separates the client (e.g., website) from the server (e.g., API)
+Statelessness: Each request contains all necessary information, eliminating the need to store session data
+Cacheability: Responses can be cached to improve performance
+Layered system: Allows for intermediary servers (e.g., load balancers)
+🖥️💻 In a client-server architecture, clients (e.g., web browsers) send requests to servers (e.g., web servers, APIs) and receive responses. Servers handle data processing and storage, while clients handle user interactions and displaying data.
+HTTP methods used in RESTful APIs include:
+
+GET: Retrieve a resource
+POST: Create a new resource
+PUT: Update an existing resource
+DELETE: Remove a resource
+PATCH: Update a partial resource
+🚦 HTTP status codes in responses provide information about the success or failure of a request:
+2xx (Success): e.g., 200 OK
+3xx (Redirection): e.g., 301 Moved Permanently
+4xx (Client Error): e.g., 404 Not Found, 401 Unauthorized
+5xx (Server Error): e.g., 500 Internal Server Error
+⚖️ Statelessness in RESTful APIs means that each request contains all necessary information for the server to understand and process it. The server doesn't store any client context between requests, simplifying the architecture and improving scalability.
+🕸️ A GraphQL query is a structured way to request specific data from an API. It has a root operation type (query, mutation, subscription) and nested fields that define the data to be retrieved or modified.
+🎣 GraphQL solves over-fetching (retrieving more data than needed) and under-fetching (needing to make multiple requests for related data) by allowing clients to request only the data they need in a single request.
+📄 In GraphQL, the schema defines the types of data that can be queried or mutated, their relationships, and the operations that can be performed on them. It acts as a contract between the client and server, ensuring data consistency and enabling tools like code generation and static type-checking.
+🚀 Advantages of GraphQL over REST APIs include:
+Flexibility: Clients can request exactly the data they need
+Reduced over-fetching and under-fetching
+Strongly-typed schema for better tooling and documentation
+Real-time updates with subscriptions
+🔀 Batching in GraphQL allows multiple queries or mutations to be combined into a single request, reducing network overhead and improving performance.
+🤔 The choice between RESTful APIs and GraphQL depends on the project's requirements:
+RESTful APIs may be preferred for simpler applications with well-defined data models and performance needs
+GraphQL is often better for complex applications with highly dynamic data requirements and the need for efficient data fetching
+📤 GET requests retrieve data from a server, while POST requests submit data to be processed by the server (e.g., creating a new resource).
+📝 PUT requests update an entire resource, while POST requests create a new resource. PATCH requests partially update an existing resource.
+❌ The DELETE method is used to remove a resource from the server (e.g., deleting a user account).
+🛠️ The PATCH method is used to update a partial resource, making it more efficient than PUT for modifying only certain fields.
+ℹ️ The OPTIONS method retrieves information about the communication options available for a given URL or server. It's often used for cross-origin resource sharing (CORS) checks.
+🗂️ The "Content-Type" header specifies the format of the request body (e.g., application/json, multipart/form-data), allowing the server to parse the data correctly.
+🕵️‍♂️ The "User-Agent" header identifies the client application making the request, which can be useful for server-side analytics, content negotiation, and compatibility checks.
+🚀 gRPC (Google Remote Procedure Call) is a modern, high-performance Remote Procedure Call (RPC) framework that uses HTTP/2 for communication. Unlike REST APIs that transfer data in human-readable formats like JSON, gRPC uses efficient binary data serialization protocols like Protocol Buffers.
+📦 Protocol Buffers (protobuf) are a language-agnostic, binary serialization format used by gRPC. They provide efficient data encoding, type safety, and easy language interoperability, making them well-suited for gRPC's communication needs.
+📝 Service definitions in gRPC are files that define the available services, their methods, and the data structures (messages) used for communication. They act as a contract between the client and server, enabling code generation and static type-checking.
+⚡ gRPC's support for HTTP/2 brings advantages like multiplexing (multiple requests over a single connection), header compression, and server push, resulting in improved performance and resource utilization compared to HTTP/1.1.
+🤔 Both RESTful APIs and gRPC have their strengths and weaknesses:
+RESTful APIs:
+
+Pros: Simple, widely adopted, human-readable data formats
+Cons: Overhead of text-based formats, limited performance compared to binary protocols
+gRPC:
+
+Pros: High performance, efficient binary data serialization, built-in load balancing and service discovery
+Cons: Steeper learning curve, limited browser support (requires a proxy)
